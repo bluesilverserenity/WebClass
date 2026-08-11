@@ -1,0 +1,12 @@
+h1 {
+  color: antiquewhite;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: black;
+  line-height: 30px;
+  font-size: larger;
+}

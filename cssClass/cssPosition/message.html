@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .bell {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        z-index: 1;
+      }
+
+      .message {
+        position: absolute;
+        top: 40px;
+        left: 750px;
+        width: 100px;
+        height: 100px;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="./images/message.png" alt="" class="bell" />
+      </div>
+      <div class="box">
+        <img src="./images/fill3.png" alt="" class="message" />
+      </div>
+    </div>
+  </body>
+</html>

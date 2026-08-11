@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .springy-text {
+        color: blue;
+        font-size: 20px;
+        animation-name: springy;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-delay: 0s;
+        animation-duration: alternate-reverse;
+        animation-fill-mode: backwards;
+        animation-play-state: running;
+      }
+      @keyframes springy {
+        0% {
+          letter-spacing: 1.2em;
+          color: rgb(55, 37, 156);
+        }
+        100% {
+          letter-spacing: 0.1em;
+          color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function togglePlayState(newState) {
+        document.getElementById("springy").style.animationPlayState = newState;
+      }
+    </script>
+    <h3 class="springy-text" id="springy">Animations</h3>
+    <button onclick="togglePlayState('Paused')">Pause</button>
+    <button onclick="togglePlayState('Running')">Play</button>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer-container {
+        font: 16px sans-serif;
+        background: goldenrod;
+        color: white;
+        height: 200px;
+        display: flex;
+      }
+
+      .box {
+        padding: 10px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+      }
+
+      .larger {
+        background: yellowgreen;
+        flex-grow: 3;
+        flex-shrink: 0;
+        flex-basis: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The CSS Flex property is a shorthand property for setting a flexible length on flex items. Specifically, it sets the flex-grow, flex-shrink, and flex-basis properties. -->
+    <div class="outer-container">
+      <div class="box">Box</div>
+      <div class="box larger">Larger Box</div>
+    </div>
+  </body>
+</html>

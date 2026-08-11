@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer-container {
+        font: 16px sans-serif;
+        background: goldenrod;
+        color: white;
+        border: 1px solid black;
+        height: 200px;
+        display: flex;
+      }
+
+      .box {
+        padding: 10px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 200px;
+      }
+
+      .smaller {
+        background: firebrick;
+        flex-shrink: 5;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The CSS flex-basis property sets the flex basis on a flex. -->
+    <div class="outer-container">
+      <div class="box">Box</div>
+      <div class="box smaller">Small Box</div>
+      <div class="box">My Box</div>
+    </div>
+  </body>
+</html>

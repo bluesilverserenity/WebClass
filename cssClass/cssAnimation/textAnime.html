@@ -1,0 +1,33 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .springy-text {
+        color: white;
+        font-size: 20px;
+        animation-name: springy-text;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+        animation-delay: 1s;
+        animation-duration: normal;
+        animation-fill-mode: forwards;
+      }
+      @keyframes springy-text {
+        0% {
+          letter-spacing: 1.2em;
+          color: white;
+        }
+        100% {
+          letter-spacing: 0.1em;
+          color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="springy-text">Lorem ipsum dolor sit amet.</h3>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        width: 400px;
+        padding: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        background: #e6e0e0;
+      }
+      p.clipped {
+        text-overflow: clip;
+        overflow: scroll;
+      }
+      p.ellipsis {
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Clip the text at the limit of the content area</h1>
+    <p class="clipped">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, libero?
+      Blanditiis quasi quis tempore velit ipsum. Debitis sit quo animi autem
+      eius quam tenetur odit impedit accusamus! Eveniet asperiores corporis
+      numquam accusantium tempore ex? Rerum voluptatem dicta cum aliquam
+      dolorum!
+    </p>
+
+    <h1>Render an ellipsis ("...") to represent clipped text</h1>
+    <p class="ellipsis">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      quisquam beatae fugiat excepturi placeat distinctio, dicta adipisci autem
+      natus qui deserunt nulla reiciendis omnis accusantium iste. Nostrum
+      blanditiis quo a consequuntur, numquam, animi saepe ullam dolorum
+      nesciunt, aliquid odio veritatis.
+    </p>
+  </body>
+</html>

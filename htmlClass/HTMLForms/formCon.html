@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="reg.php" method="post">
+      <fieldset>
+        <legend>Bio Data</legend>
+        <input
+          type="text"
+          name="fname"
+          placeholder="Enter your first name"
+          id=""
+        />
+        <input
+          type="text"
+          name="lname"
+          placeholder="Enter your last name"
+          id=""
+        />
+        <label for=""
+          >Male: <input type="radio" name="gender" value="male"
+        /></label>
+        <label for=""
+          >Female: <input type="radio" name="gender" value="female"
+        /></label>
+
+        <input type="date" name="dob" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact:</legend>
+        <input type="tel" name="phone" placeholder="Enter your phone number" />
+        <input type="email" name="phone" placeholder="Enter Email" />
+        <input type="url" name="phone" placeholder="Enter your website link" />
+        <input
+          type="text"
+          size="40"
+          name="address"
+          placeholder="Enter your Address"
+          id=""
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>Educational Data:</legend>
+        <input
+          type="text"
+          name="pry"
+          placeholder="Please Primary School details"
+        />
+        <span>Year Started :: <input type="month" /></span>
+        <span>Year Graduated :: <input type="month" /></span>
+        <br /><br />
+        <input
+          type="text"
+          name="sec"
+          placeholder="Please Secondary School details"
+        />
+        <span>Year Started :: <input type="month" /></span>
+        <span>Year Graduated :: <input type="month" /></span>
+        <br /><br />
+        <input type="text" name="uni" placeholder="Please University details" />
+        <span>Year Started :: <input type="month" /></span>
+        <span>Year Graduated :: <input type="month" /></span>
+        <br /><br />
+        <span
+          >Upload Secondary School Certificate
+          <input type="file" capture="user"
+        /></span>
+        <span
+          >CGPA ::: 1.0
+          <input type="range" min="1.0" max="5.0" value="2.5" />5.0</span
+        >
+      </fieldset>
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>

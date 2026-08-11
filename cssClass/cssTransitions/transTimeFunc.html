@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        transform: rotate(30deg);
+        /* property, duration, time-function, delay */
+        transition-property: transform;
+        transition-duration: 10s;
+        transition-timing-function: ease-in-out;
+        transform-origin: inherit;
+      }
+
+      img:hover {
+        transform: translate(1400px, 500px);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="./mygif/bike1.gif" alt="Biking man" />
+  </body>
+</html>

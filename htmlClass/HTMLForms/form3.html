@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="register.php" name="list" method="post">
+      <label for="food">Choose your food from the list:</label>
+      <input list="foods" name="food" id="food" />
+
+      <datalist id="foods">
+        <option value="Rice"></option>
+        <option value="Beans"></option>
+        <option value="Yam"></option>
+        <option value="Bread"></option>
+        <option value="Noodles"></option>
+        <option value="Spaghetti"></option>
+      </datalist>
+      <br /><br />
+      <label for="">
+        0.00
+        <input
+          type="range"
+          name="price"
+          min="0.00"
+          value="50.00"
+          max="100.00"
+          required="required"
+        />
+        100.00
+      </label>
+      <br /><br />
+      <textarea
+        name="txt"
+        id=""
+        cols="50"
+        rows="20"
+        placeholder="Enter your message here..."
+      ></textarea>
+    </form>
+  </body>
+</html>

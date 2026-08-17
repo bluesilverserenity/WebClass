@@ -1,0 +1,62 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #grid {
+        display: grid;
+        grid-template-rows: 50px 1fr 80px;
+        grid-template-columns: 120px 1fr 80px;
+        grid-gap: 5px;
+        height: 90vh;
+      }
+
+      #grid > div {
+        width: 200px;
+        height: 200px;
+        border: 3px solid;
+        text-align: center;
+        font-size: 100px;
+        font-family: cursive;
+        background-color: limegreen;
+      }
+
+      #item1 {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 2;
+      }
+
+      #item2 {
+        grid-row-start: 4;
+        grid-column-start: 4;
+        grid-row-end: 4;
+        grid-column-end: 4;
+      }
+
+      #item3 {
+        grid-row-start: 5;
+        grid-column-start: 5;
+        grid-row-end: 6;
+        grid-column-end: 6;
+      }
+
+      #item4 {
+        grid-row-start: 6;
+        grid-column-start: 6;
+        grid-row-end: 7;
+        grid-column-end: 7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div id="item1">A</div>
+      <div id="item2">B</div>
+      <div id="item3">C</div>
+      <div id="item4">D</div>
+    </div>
+  </body>
+</html>
